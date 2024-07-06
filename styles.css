@@ -56,7 +56,7 @@ body {
 }
 .botao_secundario {
     background-color: transparent;
-    border: 2px solid var(--branco-principal);
+    border: 0.125rem solid var(--branco-principal);
 }
 .container__aviso {
     color: var(--cinza-secundario);
