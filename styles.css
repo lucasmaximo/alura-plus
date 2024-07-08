@@ -19,17 +19,17 @@ body {
     font-size: 1rem;
     font-weight: 400;
 }
+.container {
+    height: 100vh; /* força o container a preencher 100% da altura da tela, mesmo que não tenha elementos para preencher o espaço */
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
 .principal {
     background-image: url("img/Background.png"); /* coloca uma imagem como fundo da tag que tem a classe .principal */
     background-repeat: no-repeat; /* Mostrar a imagem só uma vez no background. Não repetir. */
     background-size: contain; /* Faz a imagem de fundo preencher toda a tela */
     align-items: center;
     text-align: center;
-}
-.container {
-    height: 100vh; /* força o container a preencher 100% da altura da tela, mesmo que não tenha elementos para preencher o espaço */
-    display: grid;
-    grid-template-columns: 50% 50%;
 }
 .container__caixa {
     margin: 0 6rem;
@@ -64,6 +64,7 @@ body {
 }
 .secundario {
     align-items: center;
+    justify-items: center;
     margin: 0 10rem;
 }
 .secundario__imagem {
